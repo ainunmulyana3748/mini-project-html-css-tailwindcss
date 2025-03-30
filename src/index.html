@@ -1,65 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-    />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body
-    class="bg-gradient-to-t h-screen font-[Poppins] from-[#fbc2eb] to-[#a6c1ee]"
+    class="bg-[url('https://img.freepik.com/premium-photo/coatefloral-pattern_908851-3827.jpg?w=740')] bg-cover bg-center h-screen"
   >
-    <header class="bg-white w-full fixed mx-auto z-20">
+    <header class="bg-white w-full fixed mx-auto z-40 border-b-2 shadow-md">
       <div
-        class="flex justify-between items-center md:p-0 px-3 py-4 sm:container sm:mx-auto"
+        class="flex justify-between items-center md:p-0 px-3 xl:max-w-6xl md:max-w-3xl sm:max-w-5xl sm:mx-auto"
       >
         <div>
           <img
-            class="w-32 cursor-pointer md:w-44"
-            src="https://restorangaruda.com/images/logo.png"
-            alt="..."
+            class="w-[96px] cursor-pointer"
+            src="./assets/logo.png"
+            alt="logo"
           />
         </div>
         <div class="flex">
           <div
-            class="nav-links bg-white w-full duration-700 fixed items-center left-0 md:p-0 md:static md:w-auto md:z-10 px-10 top-[-100%] z-[-1]"
+            class="nav-links bg-white w-full duration-700 fixed items-center left-0 border-b-2 md:border-0 md:p-0 md:static md:w-auto md:z-10 px-10 top-[-100%] z-[-1]"
           >
             <nav>
               <ul
-                class="flex flex-col gap-8 md:flex-row md:gap-[2vw] md:items-center my-8 sm:text-[14px]"
+                class="flex flex-col gap-8 pt-3 my-8 md:pt-0 md:flex-row md:gap-[2vw] md:items-center md:my-0 sm:text-[14px]"
               >
                 <li>
-                  <a class="hover:text-gray-500" href="#">Home</a>
+                  <a class="hover:text-gray-500 hover:underline" href="#home"
+                    >Home</a
+                  >
                 </li>
                 <li>
-                  <a class="hover:text-gray-500" href="#">Tentang Kami</a>
+                  <a
+                    class="hover:text-gray-500 hover:underline"
+                    href="aboutme.html"
+                    >Tentang Kami</a
+                  >
                 </li>
                 <li>
-                  <a class="hover:text-gray-500" href="#">Menu</a>
+                  <a
+                    class="hover:text-gray-500 hover:underline"
+                    href="#deliveryOrder"
+                    >Delivery Order</a
+                  >
                 </li>
                 <li>
-                  <a class="hover:text-gray-500" href="#">Delivery Order</a>
+                  <a class="hover:text-gray-500 hover:underline" href="#menu"
+                    >Menu</a
+                  >
                 </li>
-                <li>
-                  <a class="hover:text-gray-500" href="#">Ala Carte</a>
-                </li>
-                <button
-                  class="bg-gray-600 rounded-full text-white hover:bg-[#87acec] px-5 py-2"
+
+                <a
+                  class="bg-gray-600 rounded-full text-white hover:bg-gray-800 px-5 py-2"
+                  href="#contactUs"
                 >
                   Hubungi Kami
-                </button>
+                </a>
               </ul>
             </nav>
           </div>
@@ -76,30 +80,38 @@
       </div>
     </header>
 
+    <!-- Home -->
     <section
-      class="bg-[url('https://restorangaruda.com/images/page.jpg')] relative bg-center bg-cover h-[100vh]"
+      class="bg-[url('https://restorangaruda.com/images/page.jpg')] relative bg-center bg-cover h-[100vh] scroll-mt-24"
+      id="home"
     >
       <div class="bg-black bg-opacity-75 absolute inset-0"></div>
       <div
         class="flex flex-col h-full justify-center text-3xl text-center text-white w-full absolute items-center"
       >
-        <h1 class="mb-2 md:text-5xl">Selamat Datang di</h1>
-        <h1 class="md:text-5xl">Nasi Padang Garuda</h1>
-      </div>
-      <div
-        class="flex flex-col justify-center text-3xl text-center text-white w-full absolute bottom-0 font-bold mb-[8rem] mx-auto"
-      >
-        <h1 class="text-5xl cursor-pointer">Menu</h1>
-        <p class="text-[18px] cursor-pointer"><u>Home</u> > <u>Menu</u></p>
+        <h1 class="mb-2 md:text-5xl animate-bounce">Selamat Datang di</h1>
+        <h1 class="md:text-5xl animate-bounce">Nasi Padang Siang Malam</h1>
       </div>
     </section>
 
+    <!-- Delivery Order -->
     <section
-      class="flex flex-col h-[90vh] p-16 items-center md:container md:mt-16 md:mx-auto md:p-0"
+      class="flex flex-col md:h-[60vh] p-16 items-center xl:max-w-6xl md:max-w-3xl sm:max-w-5xl sm:mx-auto md:mt-16 md:p-0 scroll-mt-24"
+      id="deliveryOrder"
     >
-      <h1 class="text-3xl font-bold mb-14 md:text-5xl">Pemesanan Online</h1>
+      <h1
+        class="text-3xl font-bold mb-14 md:text-5xl"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Pemesanan Online
+      </h1>
       <div class="flex flex-col gap-14 md:flex-row">
-        <div class="flex flex-col text-center items-center">
+        <div
+          class="flex flex-col text-center items-center gap-3"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <img
             src="https://img.icons8.com/nolan/96/purchase-order.png"
             alt="Delivery"
@@ -112,7 +124,11 @@
           </p>
         </div>
 
-        <div class="flex flex-col text-center items-center">
+        <div
+          class="flex flex-col text-center items-center gap-3"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <img
             src="https://img.icons8.com/nolan/96/wish-list.png"
             alt="alacarte"
@@ -125,20 +141,609 @@
           </p>
         </div>
 
-        <div class="flex flex-col text-center items-center">
+        <div
+          class="flex flex-col text-center items-center gap-3"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <img
             src="https://img.icons8.com/nolan/96/natural-food.png"
             alt="prasmanan"
             class="w-28"
           />
-          <h1 class="text-xl font-bold">Ala Carte</h1>
+          <h1 class="text-xl font-bold">Prasmanan</h1>
           <p>
-            Menikmati hidangan kami langsung di rumah/kantor Anda. Minimal order
-            Rp500,000.-
+            Untuk setiap acara spesial Anda. Informasi dapat langsung hubungi
+            kantor kami.
           </p>
         </div>
       </div>
     </section>
+
+    <section
+      class="xl:max-w-6xl md:max-w-3xl sm:max-w-5xl sm:mx-auto flex flex-col gap-10 scroll-mt-24"
+      id="menu"
+    >
+      <h1
+        class="text-center text-3xl font-bold"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Menu Kami
+      </h1>
+
+      <div
+        class="flex flex-col gap-8 items-center px-2 xl:items-start"
+        data-aos="zoom-in-right"
+        data-aos-duration="1500"
+      >
+        <h1 class="text-center text-2xl font-bold">Nasi Paket</h1>
+
+        <div class="grid grid-col gap-7 sm:grid-cols-2 xl:grid-cols-4">
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="https://gratisongkir-storage.com/products/900x900/f2dlD488M0tP.jpg"
+                alt="nasi-rendang"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Nasi Rendang
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Hidangan nasi dengan rendang sapi asli Padang, dilengkapi dengan
+                gulai, sayur nangka, dan sambal lado hijau. Nikmat dan lezat!
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="https://media-ayoomall.airmasgroup.co.id/prod/product/oQ1pcs1hwD5pO7YrTvKmBtnt3HXkmYqsWKnRJZJL.jpg"
+                alt="nasi-Ayam-Gulai"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Nasi Ayam Gulai
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Hidangan nasi dengan Ayam kampung yang dilengkapi dengan gulai,
+                sayur nangka, dan sambal lado hijau. Nikmat dan lezat!
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="https://www.tuanmudo.id/wp-content/uploads/elementor/thumbs/ayampop-qdjjxaqo0kb7tyz7pdq3is28skxt86xygos7mwz068.jpeg"
+                alt="nasi-ayam-pop"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Nasi Ayam Pop
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Hidangan nasi dengan Ayam kampung Pop dengan sayur nangka, dan
+                sambal lado hijau. Nikmat dan lezat!
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="https://www.tuanmudo.id/wp-content/uploads/elementor/thumbs/tunjang-qdjlnd119r9sf2tsapianm8wth1agqbxbvhddmy7c0.jpeg"
+                alt="nasi-tunjang"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Nasi Gulai Tunjang
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Hidangan nasi dengan Gulai Tunjang dilengkapi sayur nangka, dan
+                sambal lado hijau. Nikmat dan lezat!
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col gap-8 items-center px-2 xl:items-start"
+        data-aos="zoom-in-left"
+        data-aos-duration="1500"
+      >
+        <h1 class="text-center text-2xl font-bold">Lauk Utama</h1>
+
+        <div class="grid grid-col gap-7 sm:grid-cols-2 xl:grid-cols-4">
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIkK5VxhA7HnNoLb1mzAZqcmrF2jav8M8Cg&s"
+                alt="rendang"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Rendang
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Nikmati kelezatan autentik rendang Padang, hidangan khas
+                Minangkabau yang terbuat dari daging sapi pilihan yang dimasak
+                perlahan dengan santan kelapa kental dan rempah-rempah alami
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAy71sbiPzeKydk57QLIFyDM2tq8NsS8KQg&s"
+                alt="gulai-tunjang"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Gulai Tunjang
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Nikmati kelezatan Gulai Tunjang Padang, hidangan khas
+                Minangkabau yang terbuat dari kikit kaki sapi yang dimasak dalam
+                kuah santan kental dengan bumbu rempah khas.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="tambusu"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Gulai Tambusu
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Cicipi kelezatan Gulai Tambusu Padang, hidangan unik khas
+                Minangkabau yang terbuat dari tahu yang diisi dengan campuran
+                daging cincang, bumbu rempah, dan telur, lalu dimasak dalam kuah
+                gulai santan yang kaya dan gurih.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="ayam-pop"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Ayam Pop
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Nikmati kelezatan Ayam Pop Padang, hidangan khas Minangkabau
+                yang terbuat dari ayam yang dimasak dengan bumbu rempah pilihan
+                dan disajikan dengan cara yang unik.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col gap-8 items-center px-2 xl:items-start"
+        data-aos="zoom-in-right"
+        data-aos-duration="1500"
+      >
+        <h1 class="text-center text-2xl font-bold">Aneka Minuman</h1>
+
+        <div class="grid grid-col gap-7 sm:grid-cols-2 xl:grid-cols-4">
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="jus-alpukat"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Jus Alpukat
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Segarkan diri Anda dengan Jus Alpukat, minuman creamy dan lezat
+                yang terbuat dari alpukat matang pilihan, dihaluskan bersama
+                susu kental manis dan es batu.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="jus-mangga"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Jus Mangga
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Nikmati kesegaran alami dari Jus Mangga, terbuat dari mangga
+                matang pilihan yang dihaluskan hingga lembut dan dicampur dengan
+                sedikit es batu untuk sensasi dingin yang menyegarkan.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="jus-apel"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Jus Apel
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Segarkan hari Anda dengan Jus Apel, minuman alami yang terbuat
+                dari apel segar pilihan yang diperas hingga halus, menghasilkan
+                rasa manis dan sedikit asam yang menyegarkan.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 border-2 h-auto border-gray-300 p-6 rounded-xl border-t-8 border-t-blue-500 w-[20rem] lg:w-[16rem] bg-white"
+          >
+            <div class="relative w-full h-[200px] overflow-hidden rounded-lg">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="jus-jambu"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black opacity-40"
+              ></div>
+            </div>
+
+            <div class="flex flex-col justify-evenly gap-3 flex-grow">
+              <h1 class="text-2xl font-semibold text-gray-800 lg:text-lg">
+                Jus Jambu
+              </h1>
+              <p
+                class="text-sm text-gray-600 hover:text-gray-800 transition duration-200 lg:text-[12px]"
+              >
+                Nikmati kesegaran Jus Jambu, minuman menyegarkan yang terbuat
+                dari jambu biji segar pilihan, dihaluskan untuk menghasilkan
+                rasa manis alami dengan sentuhan sedikit asam yang menyegarkan.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-semibold text-blue-600 lg:text-sm">
+                Rp 32.000
+              </p>
+              <button
+                class="bg-blue-500 py-2 px-5 rounded-lg text-white font-medium hover:bg-blue-600 transition duration-200 transform hover:shadow-lg lg:text-[12px]"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-black text-white py-[5em] px-[2em] mt-16 flex flex-col gap-16 w-full mx-auto scroll-mt-24"
+      id="contactUs"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:max-w-6xl md:max-w-3xl sm:max-w-5xl sm:mx-auto"
+      >
+        <div class="flex flex-col gap-8">
+          <h1 class="text-lg font-bold">Restoran Siang Malam</h1>
+          <p class="font-light text-gray-300">
+            Restoran Siang Malam telah berdiri sejak 1976 hingga saat ini. Kami
+            bergerak dibidang mengelolah makanan yang spesifik yaitu Minang dan
+            Melayu
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-8">
+          <h1 class="text-lg font-bold">Open Hours</h1>
+          <div
+            class="grid grid-cols-2 gap-x-4 text-gray-300 font-light min-w-fit"
+          >
+            <ul class="space-y-2">
+              <li>Senin</li>
+              <li>Selasa</li>
+              <li>Rabu</li>
+              <li>Kamis</li>
+              <li>Jumat</li>
+              <li>Sabtu</li>
+              <li>Minggu</li>
+            </ul>
+            <ul class="space-y-2">
+              <li>09:00 - 22:00</li>
+              <li>09:00 - 22:00</li>
+              <li>09:00 - 22:00</li>
+              <li>09:00 - 22:00</li>
+              <li>09:00 - 22:00</li>
+              <li>09:00 - 22:00</li>
+              <li>09:00 - 22:00</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6 md:col-span-2 lg:col-span-1">
+          <h1 class="text-lg font-bold">Newsletter</h1>
+
+          <div class="flex flex-col gap-6">
+            <p class="font-light text-gray-300">
+              Dapat informasi dan promo terbaru dari kami
+            </p>
+            <div class="flex flex-col gap-2">
+              <button class="bg-gray-700 text-white font-semibold p-3">
+                Enter Email address
+              </button>
+              <button class="bg-[#f3c063] text-white font-semibold p-3">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full text-center gap-3">
+        <p>
+          copyright ©2025 <strong>Restoran Siang Malam</strong> - All rights
+          reserved.
+        </p>
+        <p class="text-[#444444]">thanks for freepik & colorlib</p>
+      </div>
+    </footer>
+
     <script src="index.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
